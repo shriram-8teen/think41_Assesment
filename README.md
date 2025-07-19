@@ -52,47 +52,44 @@ Content-Type: application/json
 {
   "option": "Option 1"
 }
+````
+###
 Close a Poll
-http
-Copy
-Edit
-PUT /polls/:id/close
-Get Poll Result
-http
-Copy
-Edit
-GET /polls/:id
-Setup Instructions
-Clone the Repository
 
-bash
-Copy
-Edit
+PUT /polls/:id/close
+###
+Get Poll Result
+GET /polls/:id
+##
+Setup Instructions
+###
+Clone the Repository
 git clone https://github.com/shriram-8teen/think41_Assesment.git
 cd think41_Assesment
+##
 Install Dependencies
-
-
+####
 npm install
+####
 Start the Server
-
 npm run dev
+####
 Server will run at: http://localhost:3000
-
+###
 Environment Variables
 Create a .env file with the following:
-
-````
 PORT=3000
+##
 Tech Stack
+####
 Node.js
-
+####
 Express
-
+####
 Nodemon
-
+####
 dotenv
-
+#####
 Notes
 Data is stored in-memory using a temporary array.
 
@@ -100,4 +97,4 @@ Restarting the server will reset all polls and votes.
 
 Author
 Shriram Hegde
-!
+
