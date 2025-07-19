@@ -24,3 +24,12 @@ Content-Type: application/json
   "options": ["Option 1", "Option 2", "Option 3"]
 }
 ````
+
+##
+GET /polls
+POST /polls/:id/vote
+Content-Type: application/json
+
+{
+  "option": "Option 1"
+}
