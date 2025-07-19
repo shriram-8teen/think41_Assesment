@@ -1,49 +1,26 @@
-
 # Think41 Polls API
 
-A simple RESTful backend for managing polls.
+A simple Node.js + Express RESTful backend for creating and managing polls.  
+This API supports poll creation, voting, closing polls, and viewing results.
 
 ## Features
+
 - Create polls with multiple options
 - Vote on polls
 - Close polls
-- Get active polls
+- List all active polls
 - View poll results
 
-## Endpoints
+## API Endpoints
 
-### Create Poll
+### Create a Poll
+
 ```http
 POST /polls
-Body: {
+Content-Type: application/json
+
+{
   "question": "Your question here",
-  "options": ["Option 1", "Option 2"]
+  "options": ["Option 1", "Option 2", "Option 3"]
 }
-```
-
-### List Active Polls
-```http
-GET /polls
-```
-
-### Vote on a Poll
-```http
-POST /polls/:id/vote
-Body: {
-  "option": "Option 1"
-}
-```
-
-### Close Poll
-```http
-PUT /polls/:id/close
-```
-
-### Get Poll Result
-```GET http/polls/:id
-
-
-```
-
-
-
+````
