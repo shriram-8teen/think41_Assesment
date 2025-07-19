@@ -40,7 +40,7 @@ PUT /polls/:id/close
 ```
 
 ### Get Poll Result
-```http
+```GET http/polls/:id
 
 
 ```
