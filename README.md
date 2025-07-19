@@ -16,6 +16,7 @@ This API supports poll creation, voting, closing polls, and viewing results.
 think41-task/
 ├── index.js
 ├── routes/
+  └── api.js
 │ └── polls.js
 ├── data/
 │ └── pollsData.js
@@ -56,10 +57,12 @@ Content-Type: application/json
 ###
 Close a Poll
 
-PUT /polls/:id/close
+PUT 
+/polls/:id/close
 ###
 Get Poll Result
-GET /polls/:id
+GET
+/polls/:id
 ##
 Setup Instructions
 ###
@@ -89,12 +92,12 @@ Express
 Nodemon
 ####
 dotenv
-#####
+###
 Notes
 Data is stored in-memory using a temporary array.
 
 Restarting the server will reset all polls and votes.
 
-Author
+Author:
 Shriram Hegde
 
