@@ -1,22 +1,15 @@
 const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
+const dotenv = require('dotenv');
+const pollRoutes = require('./routes/polls');
+
+dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-
-app.use(cors());
 app.use(express.json());
 
-// Import Routes
-const apiRoutes = require('./routes/api');
-app.use('/api', apiRoutes);
+app.use('/polls', pollRoutes);
 
-// Root endpoint
-app.get('/', (req, res) => {
-  res.send('Think41 Backend API is running');
-});
-
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
