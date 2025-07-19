@@ -93,11 +93,12 @@ Nodemon
 ####
 dotenv
 ###
-Notes
+```
+Notes: 
 Data is stored in-memory using a temporary array.
 
 Restarting the server will reset all polls and votes.
 
 Author:
 Shriram Hegde
-
+````
