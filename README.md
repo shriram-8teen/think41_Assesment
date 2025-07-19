@@ -1,4 +1,4 @@
-README.md
+
 # Think41 Polls API
 
 A simple RESTful backend for managing polls.
